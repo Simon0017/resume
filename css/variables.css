@@ -1,0 +1,154 @@
+/* ============================================================
+   VARIABLES.CSS — Design tokens, custom properties
+   ============================================================ */
+
+:root {
+  /* === COLORS: Light Mode (default) === */
+  --color-bg-primary:       #F8F7F2;
+  --color-bg-secondary:     #EFEDE6;
+  --color-bg-card:          #FFFFFF;
+  --color-bg-header:        rgba(248, 247, 242, 0.88);
+  --color-bg-overlay:       rgba(15, 20, 40, 0.72);
+
+  --color-text-primary:     #1A1A2E;
+  --color-text-secondary:   #4A4A6A;
+  --color-text-muted:       #7A7A9A;
+  --color-text-inverse:     #F8F7F2;
+
+  --color-accent-gold:      #C9A84C;
+  --color-accent-gold-light:#E2C97A;
+  --color-accent-gold-dark: #9E7A28;
+  --color-accent-navy:      #0F3460;
+  --color-accent-navy-light:#1A4D8A;
+
+  --color-education:        #2D6A9F;
+  --color-work:             #C9A84C;
+  --color-certification:    #2D8C5A;
+
+  --color-border:           rgba(26, 26, 46, 0.12);
+  --color-border-strong:    rgba(26, 26, 46, 0.25);
+  --color-shadow:           rgba(26, 26, 46, 0.10);
+  --color-shadow-deep:      rgba(26, 26, 46, 0.22);
+
+  /* === COLORS: Dark Mode === */
+  --color-bg-primary-dark:       #14131F;
+  --color-bg-secondary-dark:     #1C1B2E;
+  --color-bg-card-dark:          #201F33;
+  --color-bg-header-dark:        rgba(20, 19, 31, 0.90);
+  --color-text-primary-dark:     #EAE8F0;
+  --color-text-secondary-dark:   #A8A5C0;
+  --color-text-muted-dark:       #6E6B8A;
+  --color-border-dark:           rgba(234, 232, 240, 0.10);
+  --color-border-strong-dark:    rgba(234, 232, 240, 0.22);
+  --color-shadow-dark:           rgba(0, 0, 0, 0.40);
+
+  /* === TYPOGRAPHY === */
+  --font-display:   'Cormorant Garamond', 'Georgia', serif;
+  --font-body:      'DM Sans', 'Helvetica Neue', sans-serif;
+  --font-mono:      'JetBrains Mono', 'Fira Code', monospace;
+
+  --text-xs:    clamp(0.7rem,  1.5vw, 0.75rem);
+  --text-sm:    clamp(0.8rem,  1.8vw, 0.875rem);
+  --text-base:  clamp(0.9rem,  2vw,   1rem);
+  --text-md:    clamp(1rem,    2.2vw, 1.125rem);
+  --text-lg:    clamp(1.1rem,  2.5vw, 1.25rem);
+  --text-xl:    clamp(1.2rem,  3vw,   1.5rem);
+  --text-2xl:   clamp(1.4rem,  3.5vw, 1.875rem);
+  --text-3xl:   clamp(1.8rem,  4.5vw, 2.5rem);
+  --text-4xl:   clamp(2.2rem,  5.5vw, 3.5rem);
+  --text-5xl:   clamp(2.8rem,  7vw,   5rem);
+
+  --weight-light:   300;
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-semi:    600;
+  --weight-bold:    700;
+
+  --leading-tight:  1.15;
+  --leading-snug:   1.35;
+  --leading-normal: 1.6;
+  --leading-loose:  1.9;
+
+  --tracking-tight: -0.04em;
+  --tracking-snug:  -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.06em;
+  --tracking-wider:  0.12em;
+
+  /* === SPACING === */
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:   12px;
+  --space-4:   16px;
+  --space-5:   20px;
+  --space-6:   24px;
+  --space-8:   32px;
+  --space-10:  40px;
+  --space-12:  48px;
+  --space-16:  64px;
+  --space-20:  80px;
+  --space-24:  96px;
+  --space-32:  128px;
+
+  /* === LAYOUT === */
+  --container-sm:   640px;
+  --container-md:   768px;
+  --container-lg:   1024px;
+  --container-xl:   1280px;
+  --container-2xl:  1440px;
+  --container-pad:  clamp(1.25rem, 5vw, 4rem);
+
+  --header-height:  72px;
+  --timeline-line:  2px;
+
+  /* === BORDERS === */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-2xl:  32px;
+  --radius-full: 9999px;
+
+  /* === SHADOWS === */
+  --shadow-sm:   0 1px 3px var(--color-shadow), 0 1px 2px var(--color-shadow);
+  --shadow-md:   0 4px 16px var(--color-shadow);
+  --shadow-lg:   0 8px 32px var(--color-shadow-deep);
+  --shadow-xl:   0 16px 64px var(--color-shadow-deep);
+  --shadow-gold: 0 0 24px rgba(201, 168, 76, 0.30);
+
+  /* === TRANSITIONS === */
+  --ease-smooth:  cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-spring:  cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-sharp:   cubic-bezier(0.12, 0, 0.39, 0);
+  --ease-out:     cubic-bezier(0.0,  0.0,  0.2, 1);
+
+  --dur-fast:   150ms;
+  --dur-base:   250ms;
+  --dur-slow:   400ms;
+  --dur-slower: 600ms;
+  --dur-slowest: 900ms;
+
+  /* === Z-INDEX === */
+  --z-base:    0;
+  --z-raised:  10;
+  --z-dropdown:20;
+  --z-sticky:  30;
+  --z-overlay: 40;
+  --z-modal:   50;
+  --z-top:     60;
+}
+
+/* === DARK MODE OVERRIDES === */
+[data-theme="dark"] {
+  --color-bg-primary:   var(--color-bg-primary-dark);
+  --color-bg-secondary: var(--color-bg-secondary-dark);
+  --color-bg-card:      var(--color-bg-card-dark);
+  --color-bg-header:    var(--color-bg-header-dark);
+  --color-text-primary: var(--color-text-primary-dark);
+  --color-text-secondary: var(--color-text-secondary-dark);
+  --color-text-muted:   var(--color-text-muted-dark);
+  --color-border:       var(--color-border-dark);
+  --color-border-strong:var(--color-border-strong-dark);
+  --color-shadow:       var(--color-shadow-dark);
+  --color-shadow-deep:  var(--color-shadow-dark);
+}
