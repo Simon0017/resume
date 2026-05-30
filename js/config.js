@@ -68,7 +68,7 @@ export const CAREER_TIMELINE = [
     year: '2013 – 2016',
     title: 'Kenya Certificate of Secondary Education',
     organisation: 'Cardinal Otunga Girls High School',
-    description: 'Achieved Mean Grade B in secondary education at a national girls\' school, excelling in commerce and mathematics.',
+    description: 'Achieved Mean Grade B in secondary education, excelling in commerce and mathematics.',
     detail: 'Four years at Cardinal Otunga Girls High School built a strong analytical and academic foundation. The Mean Grade B in KCSE reflected consistent performance across sciences, languages, and commerce subjects.',
     skills: ['Critical thinking', 'Mathematics', 'Commerce', 'Leadership'],
     icon: 'fa-school',
